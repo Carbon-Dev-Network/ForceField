@@ -13,10 +13,22 @@
     <div class="page-wrapper with-navbar">
         <nav class="navbar">
             <div class="navbar-content">
-                <button class="btn btn-action" type="button">
-                    <i class="bi bi-list"></i>
-                    <span class="sr-only">Toggle sidebar</span>
-                </button>
+                <div class="dropdown">
+                    <button class="btn btn-action" data-toggle="dropdown" type="button" id="dropdown-toggle-btn-1" aria-haspopup="true"
+                        aria-expanded="false">
+                        <i class="bi bi-list"></i>
+                        <span class="sr-only">Toggle sidebar</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdown-toggle-btn-1">
+                        <h6 class="dropdown-header">More</h6>
+                        <a href="/beta-program" class="dropdown-item">Beta Program</a>
+                        <a href="/developers" class="dropdown-item">Developers</a>
+                        <div class="dropdown-divider"></div>
+                        <div class="dropdown-content">
+                            <button class="btn btn-block" type="button">Enroll</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <a href="/" class="navbar-brand">
                 <img src="assets/image/logo/ForceFieldLogo.png" alt="Force Field Logo">
@@ -64,17 +76,29 @@
 
         <div class="content-wrapper">
 
+            <div class="alert alert-secondary" role="alert" style="margin:15px;">
+                <h4 class="alert-heading">Platform Construction Warning</h4>
+                Like everthing being developed by Carbon Studios, Force Field is in beta and has expiremental features, vist <a href="https://github.com/Carbon-Dev-Network/ForceField" class="alert-link">The Github</a> for more information.
+            </div>
+
             <div class="card">
-                <h1 class="card-title">
-                    Internet Access With Peace of Mind
-                </h1>
-                <p>
-                    The weather forecast didn't say that, but the steel plate in his hip did. He had learned over the
-                    years to trust
-                    his hip over the weatherman. It was going to rain, so he better get outside and prepare...
-                </p>
-                <div class="text-right"> 
-                    <a href="#" class="btn">Read more</a>
+                <div class="d-flex flex-row">
+                    <div>
+                        <img src="assets/image/logo/ForceFieldLogo.png" width="90" style="margin-right:15px;">
+                    </div>
+                    <div>
+                        <h1 class="card-title">
+                            Internet Access With Peace of Mind
+                        </h1>
+                        <p>
+                            The weather forecast didn't say that, but the steel plate in his hip did. He had learned over the
+                            years to trust
+                            his hip over the weatherman. It was going to rain, so he better get outside and prepare...
+                        </p>
+                        <div class="text-right">
+                            <a href="/get-started" class="btn">Get Started</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
